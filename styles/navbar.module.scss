@@ -1,0 +1,13 @@
+@import "mixins";
+
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+
+  .left {
+    @include center();
+  }
+}
