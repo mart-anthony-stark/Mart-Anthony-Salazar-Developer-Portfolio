@@ -1,0 +1,7 @@
+@import "mixins";
+@import "variables";
+
+.hero {
+  background: $c-pri;
+  height: calc(100vh - 100px);
+}
