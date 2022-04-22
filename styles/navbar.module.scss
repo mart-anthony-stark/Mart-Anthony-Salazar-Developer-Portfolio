@@ -1,4 +1,5 @@
 @import "mixins";
+@import "variables";
 
 .nav {
   height: 100px;
@@ -6,8 +7,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
+  background: $c-pri;
+  color: #fff;
+  position: relative;
 
   .left {
     @include center();
+    @include gapped(15px);
+
+    .logo {
+      height: 70px;
+      width: 70px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+      @include center();
+    }
+
+    .name {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .links {
+    @include gapped(15px);
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
   }
 }
