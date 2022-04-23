@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Home.module.scss";
 import { motion } from "framer-motion";
+import Typography from "../components/Typography";
 
 const variants = {
   visible: { opacity: 1, y: 0 },
@@ -14,28 +15,19 @@ const Home: NextPage = () => {
   return (
     <div>
       <section className={styles.hero}>
-        <motion.h1
-          animate={{ y: -100, opacity: 0 }}
-          transition={{ delay: 2, duration: 1.3 }}
-          className={styles.typography}
-        >
-          <motion.span
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.8 }}
-          >
-            Turning Ideas
-          </motion.span>
-          <motion.span
-            variants={variants}
-            initial="hidden"
-            animate="visible"
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Into Solutions
-          </motion.span>
-        </motion.h1>
+        <Typography text1="Turning Ideas" text2="Into Solutions" />
+        <Typography text1="Better People," text2="Better Websites" delay={4} />
+        <Typography
+          text1="Create, curate, teach."
+          text2="That's the way I code"
+          delay={8}
+        />
+        <Typography
+          text1="Mart Anthony Salazar"
+          text2="Web Developer"
+          delay={12}
+          permanent={true}
+        />
       </section>
     </div>
   );
