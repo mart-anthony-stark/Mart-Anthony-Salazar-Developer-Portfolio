@@ -8,7 +8,7 @@
   align-items: center;
   padding: 0 50px;
   background: $c-pri;
-  color: #fff;
+  color: $c-white;
   position: relative;
 
   .left {
@@ -18,7 +18,7 @@
     .logo {
       height: 70px;
       width: 70px;
-      border: 2px solid #fff;
+      border: 2px solid $c-white;
       border-radius: 100%;
       @include center();
     }
@@ -32,7 +32,7 @@
   .links {
     @include gapped(15px);
     a {
-      color: #fff;
+      color: $c-white;
       text-decoration: none;
       font-size: 1.3rem;
       font-weight: 600;
