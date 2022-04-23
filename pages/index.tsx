@@ -5,6 +5,11 @@ import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Home.module.scss";
 import { motion } from "framer-motion";
 
+const variants = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 100 },
+};
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -15,15 +20,17 @@ const Home: NextPage = () => {
           className={styles.typography}
         >
           <motion.span
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
+            variants={variants}
+            initial="hidden"
+            animate="visible"
             transition={{ duration: 0.8 }}
           >
             Turning Ideas
           </motion.span>
           <motion.span
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
+            variants={variants}
+            initial="hidden"
+            animate="visible"
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Into Solutions
