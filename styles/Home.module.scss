@@ -4,4 +4,14 @@
 .hero {
   background: $c-pri;
   height: calc(100vh - 100px);
+  color: $c-white;
+  @include center();
+  .typography {
+    font-size: 4rem;
+    position: fixed;
+
+    span {
+      display: block;
+    }
+  }
 }
