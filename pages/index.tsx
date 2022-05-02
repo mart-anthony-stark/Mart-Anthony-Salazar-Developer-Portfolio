@@ -5,6 +5,7 @@ import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Home.module.scss";
 import { motion } from "framer-motion";
 import Typography from "../components/Typography";
+import About from "../components/about";
 
 const variants = {
   visible: { opacity: 1, y: 0 },
@@ -15,20 +16,21 @@ const Home: NextPage = () => {
   return (
     <div>
       <section className={styles.hero}>
-        <Typography text1="Turning Ideas" text2="Into Solutions" />
-        <Typography text1="Better People," text2="Better Websites" delay={4} />
+        {/* <Typography text1="Turning Ideas" text2="Into Solutions" />
         <Typography
-          text1="Create, curate, teach."
+          text1="Create, curate, solve."
           text2="That's the way I code"
-          delay={8}
-        />
+          delay={4}
+        /> */}
         <Typography
           text1="Mart Anthony Salazar"
           text2="Web Developer"
-          delay={12}
+          delay={8}
           permanent={true}
         />
+        {/* <button>Know Me More</button> */}
       </section>
+      <About />
     </div>
   );
 };
