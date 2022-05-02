@@ -34,7 +34,7 @@ const Typography: FC<Props> = ({
       <motion.h1
         animate={!permanent && { y: -100, opacity: 0 }}
         transition={{ delay: delay ? delay + 2 : 2, duration: 1.3 }}
-        className={styles.typography}
+        className={permanent ? styles.permanent : styles.typography}
       >
         <motion.span
           variants={variants}
