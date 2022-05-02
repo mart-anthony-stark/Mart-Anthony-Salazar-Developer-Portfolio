@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap");
+@import "mixins";
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-}
+  scroll-behavior: smooth;
 
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: #0a192f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+  }
+}
+section {
+  padding-left: 100px;
+}
 a {
   all: unset;
   cursor: pointer;
@@ -13,23 +29,24 @@ a {
 
 li {
   all: unset;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0%;
-    background: rgb(255, 255, 255);
-    bottom: -3px;
-    left: 0;
-    transition: width 1s ease;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   height: 2px;
+  //   width: 0%;
+  //   background: rgb(255, 255, 255);
+  //   bottom: -3px;
+  //   left: 0;
+  //   transition: width 1s ease;
+  // }
 }
 
-.active {
-  position: relative;
+.active a {
+  transition: 0.5s ease;
+  // position: relative;
 
-  &::after {
-    width: 80%;
-  }
+  // &::after {
+  //   width: 80%;
+  // }
+  color: $c-accent !important;
 }

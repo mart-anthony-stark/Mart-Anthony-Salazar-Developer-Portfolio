@@ -3,7 +3,7 @@
 
 .hero {
   background: $c-pri;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
   color: $c-white;
   @include center();
   .typography {
@@ -14,5 +14,29 @@
     span {
       display: block;
     }
+  }
+  .permanent {
+    position: absolute;
+    font-size: 4rem;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  .two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    .left {
+      max-width: 400px;
+      line-height: 25px;
+    }
+  }
+
+  strong {
+    color: $c-accent;
   }
 }
