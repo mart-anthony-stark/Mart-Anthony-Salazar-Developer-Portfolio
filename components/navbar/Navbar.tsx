@@ -17,14 +17,14 @@ const Navbar = () => {
         <li className={router.asPath == "/" ? "active" : ""}>
           <Link href="/">Home</Link>
         </li>
-        <li className={router.asPath == "/about" ? "active" : ""}>
-          <Link href="/about">About</Link>
+        <li className={router.asPath == "/#about" ? "active" : ""}>
+          <Link href="/#about">About</Link>
         </li>
         <li className={router.asPath == "/works" ? "active" : ""}>
           <Link href="/works">Works</Link>
         </li>
-        <li className={router.asPath == "/contact" ? "active" : ""}>
-          <Link href="/contact">Contact</Link>
+        <li className={router.asPath == "/#contact" ? "active" : ""}>
+          <Link href="/#contact">Contact</Link>
         </li>
       </div>
     </nav>
