@@ -49,6 +49,12 @@
     transform: translate(-50%, -50%);
     @include gapped(30px);
     text-align: center;
+    img {
+      padding: 10px !important;
+      height: 50px !important;
+      width: 50px !important;
+    }
+
     a {
       color: $c-white;
       text-decoration: none;
