@@ -1,6 +1,11 @@
 import styles from "../../styles/navbar.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Home from "../../svg/home.svg";
+import About from "../../svg/about.svg";
+import Work from "../../svg/works.svg";
+import Contact from "../../svg/contact.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = useRouter();
@@ -15,16 +20,24 @@ const Navbar = () => {
       </div>
       <div className={styles.links}>
         <li className={router.asPath == "/" ? "active" : ""}>
-          <Link href="/">Home</Link>
+          <Link href="/">
+            <Image src={Home} alt="" />
+          </Link>
         </li>
         <li className={router.asPath == "/#about" ? "active" : ""}>
-          <Link href="/#about">About</Link>
+          <Link href="/#about">
+            <Image src={About} alt="" />
+          </Link>
         </li>
         <li className={router.asPath == "/works" ? "active" : ""}>
-          <Link href="/works">Works</Link>
+          <Link href="/works">
+            <Image src={Work} alt="" />
+          </Link>
         </li>
         <li className={router.asPath == "/#contact" ? "active" : ""}>
-          <Link href="/#contact">Contact</Link>
+          <Link href="/#contact">
+            <Image src={Contact} alt="" />
+          </Link>
         </li>
       </div>
     </nav>
