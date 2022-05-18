@@ -41,12 +41,12 @@ li {
   // }
 }
 
-.active a {
+.active {
   transition: 0.5s ease;
   // position: relative;
-
   // &::after {
   //   width: 80%;
   // }
-  color: $c-accent !important;
+  background: $c-accent-dark !important;
+  border-radius: 5px;
 }
