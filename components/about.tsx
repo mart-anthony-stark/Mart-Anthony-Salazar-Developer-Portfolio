@@ -8,7 +8,7 @@ const About = () => {
       <div className={styles["two-cols"]}>
         <div className={styles["left"]}>
           <p>
-            I am <strong>Mart Anthony Salazar</strong>, I am highly passionate
+            I am <strong>Mart Anthony Salazar</strong>. I am highly passionate
             about learning different programming languages, technologies, and
             skills that I can use for my future work and projects. I have an
             experience in freelancing particularly in web development and still
