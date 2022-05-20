@@ -14,6 +14,15 @@ const About = () => {
             experience in freelancing particularly in web development and still
             learning things to grow in the tech industry.
           </p>
+
+          <a href="https://ko-fi.com/Q5Q7CTA9C" target="_blank">
+            <img
+              height="36"
+              style={{ border: 0, height: 36 }}
+              src="https://cdn.ko-fi.com/cdn/kofi4.png?v=3"
+              alt="Buy Me a Coffee at ko-fi.com"
+            />
+          </a>
         </div>
         <Image src={Chibi} width={500} height={500} />
       </div>
