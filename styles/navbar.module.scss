@@ -49,6 +49,8 @@
     transform: translate(-50%, -50%);
     @include gapped(30px);
     text-align: center;
+    cursor: pointer;
+
     img {
       padding: 10px !important;
       height: 50px !important;
