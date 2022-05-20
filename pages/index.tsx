@@ -16,12 +16,12 @@ const Home: NextPage = () => {
   return (
     <div>
       <section className={styles.hero}>
-        {/* <Typography text1="Turning Ideas" text2="Into Solutions" />
+        <Typography text1="Turning Ideas" text2="Into Solutions" />
         <Typography
           text1="Create, curate, solve."
           text2="That's the way I code"
           delay={4}
-        /> */}
+        />
         <Typography
           text1="Mart Anthony Salazar"
           text2="Web Developer"
