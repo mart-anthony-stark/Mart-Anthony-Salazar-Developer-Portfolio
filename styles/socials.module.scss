@@ -1,0 +1,16 @@
+.socials {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+
+  span {
+    height: 1.2rem;
+    width: 2px;
+    background: #9ba0af;
+  }
+}
