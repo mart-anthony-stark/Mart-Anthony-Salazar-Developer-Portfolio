@@ -33,6 +33,9 @@
     .left {
       max-width: 400px;
       line-height: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
     }
   }
 
