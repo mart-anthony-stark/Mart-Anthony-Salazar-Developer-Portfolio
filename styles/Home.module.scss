@@ -2,6 +2,7 @@
 @import "variables";
 
 .hero {
+  position: relative;
   background: $c-pri;
   height: calc(100vh);
   color: $c-white;
@@ -41,5 +42,12 @@
 
   strong {
     color: $c-accent;
+  }
+
+  .know {
+    position: absolute;
+    bottom: 5rem;
+    cursor: pointer;
+    padding: 10px 20px;
   }
 }
