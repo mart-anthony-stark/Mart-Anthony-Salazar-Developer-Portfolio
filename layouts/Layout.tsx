@@ -11,7 +11,6 @@ const Layout: FC<Props> = ({ children }) => {
     <div>
       <Navbar />
       {children}
-      <Social />
     </div>
   );
 };
