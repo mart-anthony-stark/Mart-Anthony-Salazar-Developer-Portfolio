@@ -4,8 +4,10 @@
 .hero {
   position: relative;
   background: $c-pri;
-  height: calc(100vh);
+  min-height: calc(100vh);
   color: $c-white;
+  flex-direction: column;
+
   @include center();
   .typography {
     font-size: 4rem;
