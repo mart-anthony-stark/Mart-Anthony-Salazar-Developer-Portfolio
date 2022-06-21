@@ -18,6 +18,8 @@
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
   }
+
+  cursor: none;
 }
 section {
   padding-left: 100px;
@@ -58,7 +60,7 @@ li {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    border: 0.5px solid var(--accent);
+    border: 0.5px solid $c-accent;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -72,7 +74,7 @@ li {
     position: absolute;
     height: 30px;
     width: 30px;
-    border: 5px solid rgba(128, 128, 128, 0.541);
+    border: 5px solid rgba(121, 121, 121, 0.541);
     border-radius: 50%;
     top: 50%;
     left: 50%;
