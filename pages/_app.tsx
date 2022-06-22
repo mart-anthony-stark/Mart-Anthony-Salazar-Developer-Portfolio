@@ -1,4 +1,6 @@
 import "../styles/globals.scss";
+// import "../styles/slider.scss";
+
 import type { AppProps } from "next/app";
 import Layout from "../layouts/Layout";
 import Typography from "../components/Typography";
