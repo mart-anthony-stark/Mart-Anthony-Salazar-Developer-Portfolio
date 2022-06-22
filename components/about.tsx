@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Chibi from "../images/chibi.png";
 import Skills from "./Skills";
+import Slider from "./Slider";
 
 const About = () => {
   return (
@@ -28,6 +29,7 @@ const About = () => {
         <Image src={Chibi} width={500} height={500} />
       </div>
       <Skills />
+      <Slider />
     </section>
   );
 };
