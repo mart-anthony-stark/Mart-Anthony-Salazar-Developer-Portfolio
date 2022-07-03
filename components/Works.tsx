@@ -3,6 +3,7 @@ import Image from "next/image";
 import reactiveOS from "../public/projects/react-os.webp";
 import pizza from "../public/projects/Pizza.webp";
 import shrewsburry from "../public/projects/shrewsburry.webp";
+import ShoeShop from "../public/projects/ShoeShop.webp";
 
 import Link from "next/link";
 
@@ -27,7 +28,13 @@ const Works = () => {
             <h4>Pizza Ordering Web App using Node.js</h4>
           </div>
         </div>
-        <div className={`${styles.block} ${styles.b3}`}></div>
+        <div className={`${styles.block} ${styles.b3}`}>
+          <Image src={ShoeShop} />
+          <div className={styles.desc}>
+            <h2>Shoe Shop</h2>
+            <h4>A desktop environment UI built using ReactJS</h4>
+          </div>
+        </div>
         <div className={`${styles.block} ${styles.b4}`}>
           <Image src={shrewsburry} />
           <div className={styles.desc}>
