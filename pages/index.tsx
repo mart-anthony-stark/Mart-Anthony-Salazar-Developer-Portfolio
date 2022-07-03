@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.scss";
 import { motion } from "framer-motion";
 import Typography from "../components/Typography";
 import About from "../components/about";
+import Works from "../components/Works";
 import Social from "../components/Socials";
 
 const variants = {
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
         <Social />
       </section>
       <About />
+      <Works />
     </div>
   );
 };
