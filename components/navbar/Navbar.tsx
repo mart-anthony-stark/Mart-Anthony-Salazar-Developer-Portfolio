@@ -29,8 +29,8 @@ const Navbar = () => {
             <Image src={About} alt="" />
           </Link>
         </li>
-        <li className={router.asPath == "/works" ? "active" : ""}>
-          <Link href="/works">
+        <li className={router.asPath == "/#works" ? "active" : ""}>
+          <Link href="/#works">
             <Image src={Work} alt="" />
           </Link>
         </li>
