@@ -6,6 +6,7 @@
   background: $c-pri;
 
   .headerGrid {
+    margin-top: 50px;
     width: 100%;
     min-height: 100vh;
     display: -ms-grid;
@@ -29,13 +30,17 @@
     .desc {
       position: absolute;
       inset: 0;
-      background: rgba(4, 37, 15, 0.623);
+      background: rgba(2, 29, 11, 0.842);
       transform: scale(0);
       transform-origin: center;
       transition: 0.5s ease;
       color: aliceblue;
       @include center();
       flex-direction: column;
+
+      h4 {
+        font-weight: 300;
+      }
     }
   }
 

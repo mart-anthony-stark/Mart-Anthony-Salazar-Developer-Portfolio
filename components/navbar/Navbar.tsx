@@ -6,9 +6,20 @@ import About from "../../svg/about.svg";
 import Work from "../../svg/works.svg";
 import Contact from "../../svg/contact.svg";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const router = useRouter();
+
+  // function navigate(path: string) {
+  //   window.history.replaceState(
+  //     { ...window.history.state, as: path, url: path },
+  //     "",
+  //     path
+  //   );
+  // }
+  useEffect(() => {}, []);
+
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
