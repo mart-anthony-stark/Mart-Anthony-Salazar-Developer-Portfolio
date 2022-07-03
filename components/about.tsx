@@ -29,7 +29,7 @@ const About = () => {
         <Image src={Chibi} width={500} height={500} />
       </div>
       <Skills />
-      <Slider />
+      {/* <Slider /> */}
     </section>
   );
 };
