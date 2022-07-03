@@ -18,17 +18,34 @@
   }
 
   .block {
+    position: relative;
     height: 100%;
     width: 100%;
     border: 1px solid white;
     background: black;
-    opacity: 0.8;
-    transition: opacity 0.2s ease-out;
+    // opacity: 0.6;
+    // transition: opacity 0.2s ease-out;
+
+    .desc {
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 37, 15, 0.623);
+      transform: scale(0);
+      transform-origin: center;
+      transition: 0.5s ease;
+      color: aliceblue;
+      @include center();
+      flex-direction: column;
+    }
   }
 
   .block:hover {
-    transition: opacity 0.2s ease-in;
-    opacity: 1;
+    // transition: opacity 0.2s ease-in;
+    // opacity: 1;
+
+    .desc {
+      transform: scale(1);
+    }
   }
 
   .b1 {
