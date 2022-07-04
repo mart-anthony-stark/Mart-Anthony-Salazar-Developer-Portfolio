@@ -6,19 +6,14 @@ import About from "../../svg/about.svg";
 import Work from "../../svg/works.svg";
 import Contact from "../../svg/contact.svg";
 import Image from "next/image";
-import { useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 
-const Navbar = () => {
-  const router = useRouter();
+type Props = {
+  activeRoute: string;
+};
 
-  // function navigate(path: string) {
-  //   window.history.replaceState(
-  //     { ...window.history.state, as: path, url: path },
-  //     "",
-  //     path
-  //   );
-  // }
-  useEffect(() => {}, []);
+const Navbar: FC<Props> = (props) => {
+  const { activeRoute } = props;
 
   return (
     <nav className={styles.nav}>
@@ -30,22 +25,22 @@ const Navbar = () => {
         </div>
       </div>
       <div className={styles.links}>
-        <li className={router.asPath == "/" ? "active" : ""}>
+        <li className={activeRoute == "/" ? "active" : ""}>
           <Link href="/">
             <Image src={Home} alt="" />
           </Link>
         </li>
-        <li className={router.asPath == "/#about" ? "active" : ""}>
+        <li className={activeRoute == "/#about" ? "active" : ""}>
           <Link href="/#about">
             <Image src={About} alt="" />
           </Link>
         </li>
-        <li className={router.asPath == "/#works" ? "active" : ""}>
+        <li className={activeRoute == "/#works" ? "active" : ""}>
           <Link href="/#works">
             <Image src={Work} alt="" />
           </Link>
         </li>
-        <li className={router.asPath == "/#contact" ? "active" : ""}>
+        <li className={activeRoute == "/#contact" ? "active" : ""}>
           <Link href="/#contact">
             <Image src={Contact} alt="" />
           </Link>
