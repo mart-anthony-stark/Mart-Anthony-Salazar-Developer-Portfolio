@@ -4,9 +4,18 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import Layout from "../layouts/Layout";
 import Typography from "../components/Typography";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import AppContext from "../context/AppContext";
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const [activeRoute, setActiveRoute] = useState("");
+
+  useEffect(() => {
+    setActiveRoute(router.asPath);
+  }, [router.asPath]);
+
   useEffect(() => {
     const cursor: any = document.querySelector("#cursor");
     function followCursor(e: MouseEvent) {
@@ -31,10 +40,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <Layout>
-      <div id="cursor"></div>
-      <Component {...pageProps} />
-    </Layout>
+    <AppContext.Provider value={{ activeRoute, setActiveRoute }}>
+      <Layout>
+        <div id="cursor"></div>
+        <Component {...pageProps} />
+      </Layout>
+    </AppContext.Provider>
   );
 }
 
