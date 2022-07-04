@@ -10,6 +10,7 @@ import { FC, useEffect, useState } from "react";
 
 type Props = {
   activeRoute: string;
+  setActiveRoute?: (path: string) => void;
 };
 
 const Navbar: FC<Props> = (props) => {
