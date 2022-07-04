@@ -12,17 +12,12 @@ const Layout: FC<Props> = ({ children }) => {
   const [activeRoute, setActiveRoute] = useState("");
 
   useEffect(() => {
-    window.onscroll = (e) => {
-      console.log(e);
-    };
-  }, []);
-  useEffect(() => {
     setActiveRoute(router.asPath);
   }, [router.asPath]);
 
   return (
     <div>
-      <Navbar activeRoute={activeRoute} />
+      <Navbar activeRoute={activeRoute} setActiveRoute={setActiveRoute} />
       {children}
     </div>
   );
