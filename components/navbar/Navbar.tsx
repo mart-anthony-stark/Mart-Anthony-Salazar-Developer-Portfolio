@@ -13,8 +13,18 @@ type Props = {
   setActiveRoute?: (path: string) => void;
 };
 
+const callback = (entries: any) => {
+  entries.forEach((entry: any) => {
+    console.log(entry);
+  });
+};
+
 const Navbar: FC<Props> = (props) => {
   const { activeRoute } = props;
+
+  // const observer = new IntersectionObserver(callback, {
+  //   threshold: 0.5,
+  // });
 
   return (
     <nav className={styles.nav}>
