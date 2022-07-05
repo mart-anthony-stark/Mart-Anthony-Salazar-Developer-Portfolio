@@ -8,7 +8,6 @@
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  // padding: 0 50px;
   background: $c-pri;
   color: $c-white;
   position: fixed;
@@ -20,6 +19,7 @@
   .left {
     // @include center();
     // @include gapped(15px);
+    background: $c-pri;
     display: flex;
     padding: 20px;
     position: relative;
@@ -35,10 +35,14 @@
 
     .name {
       position: fixed;
-      left: 100px;
+      top: 0;
+      left: 80px;
+      padding: 0.5rem;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       background: $c-pri;
+      height: 90px;
     }
   }
 
@@ -53,9 +57,9 @@
     cursor: pointer;
 
     img {
-      padding: 10px !important;
       height: 50px !important;
       width: 50px !important;
+      padding: 5px !important;
     }
 
     a {
@@ -63,6 +67,33 @@
       text-decoration: none;
       font-size: 1.3rem;
       font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    top: unset;
+
+    .left {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .links {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 1rem;
+      img {
+        padding: 2px !important;
+        height: 50px !important;
+        width: 50px !important;
+      }
     }
   }
 }
