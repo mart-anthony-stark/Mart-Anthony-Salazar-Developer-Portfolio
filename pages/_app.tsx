@@ -7,6 +7,7 @@ import Typography from "../components/Typography";
 import { useEffect, useState } from "react";
 import AppContext from "../context/AppContext";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -41,6 +42,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <AppContext.Provider value={{ activeRoute, setActiveRoute }}>
+      <Head>
+        <title>Mart Anthony Salazar</title>
+      </Head>
       <Layout>
         <div id="cursor"></div>
         <Component {...pageProps} />
