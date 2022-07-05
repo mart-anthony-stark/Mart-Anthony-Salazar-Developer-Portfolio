@@ -59,16 +59,16 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://martsalazar.vercel.app//" />
       </Head>
       <Script
-        async
         src="https://www.googletagmanager.com/gtag/js?id=G-W4BSK2TC51"
-      ></Script>
-      <Script>
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-        gtag('config', 'G-W4BSK2TC51');
+          gtag('config', 'G-W4BSK2TC51');
         `}
       </Script>
       <Layout>
