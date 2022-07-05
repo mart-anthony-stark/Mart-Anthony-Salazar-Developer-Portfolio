@@ -37,22 +37,22 @@ const Navbar: FC<Props> = (props) => {
       </div>
       <div className={styles.links}>
         <li className={activeRoute == "/" ? "active" : ""}>
-          <Link href="/">
+          <Link passHref href="/">
             <Image src={Home} height={40} width={40} alt="" />
           </Link>
         </li>
         <li className={activeRoute == "/#about" ? "active" : ""}>
-          <Link href="/#about">
+          <Link passHref href="/#about">
             <Image src={About} height={40} width={40} alt="" />
           </Link>
         </li>
         <li className={activeRoute == "/#works" ? "active" : ""}>
-          <Link href="/#works">
+          <Link passHref href="/#works">
             <Image src={Work} height={40} width={40} alt="" />
           </Link>
         </li>
         <li className={activeRoute == "/#contact" ? "active" : ""}>
-          <Link href="/#contact">
+          <Link passHref href="/#contact">
             <Image src={Contact} height={40} width={40} alt="" />
           </Link>
         </li>
