@@ -43,6 +43,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <AppContext.Provider value={{ activeRoute, setActiveRoute }}>
       <Head>
+        <meta charSet="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mart Anthony Salazar</title>
       </Head>
       <Layout>
