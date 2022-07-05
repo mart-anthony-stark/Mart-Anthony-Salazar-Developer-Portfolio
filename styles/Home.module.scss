@@ -13,6 +13,7 @@
     font-size: 3rem;
     position: fixed;
     text-align: center;
+    transform: translateX(-40px);
 
     span {
       display: block;
@@ -22,6 +23,7 @@
     position: absolute;
     font-size: 3rem;
     text-align: center;
+    transform: translateX(-40px);
 
     span {
       display: block;
@@ -36,13 +38,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    gap: 5rem;
 
     .left {
       max-width: 400px;
       line-height: 25px;
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
+      gap: 1.5rem;
     }
   }
 
