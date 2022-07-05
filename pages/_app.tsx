@@ -48,6 +48,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Mart Anthony Salazar" key="title" />
+        <meta
+          property="og:image"
+          content="https://github.com/mart-anthony-stark/mart-anthony-stark/blob/main/gh-banner3.png?raw=true"
+        />
+        <meta
+          property="og:description"
+          content="A Filipino freelance web developer and BSIT student. He has a passion in learning different programming languages, technologies, and skills that can be used for future work and projects. He has an experience in freelancing particularly in web development and data science and still learning things to grow in the tech industry."
+        />
+        <meta property="og:url" content="https://martsalazar.vercel.app//" />
       </Head>
       <Layout>
         <div id="cursor"></div>
