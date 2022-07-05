@@ -14,7 +14,7 @@ const Works = () => {
       <div className={styles.headerGrid}>
         <Link href="/">
           <div className={`${styles.block} ${styles.b1}`}>
-            <Image src={reactiveOS} />
+            <Image alt="Reactive OS" src={reactiveOS} />
             <div className={styles.desc}>
               <h2>Reactive OS</h2>
               <h4>A desktop environment UI built using ReactJS</h4>
@@ -22,21 +22,21 @@ const Works = () => {
           </div>
         </Link>
         <div className={`${styles.block} ${styles.b2}`}>
-          <Image src={pizza} />
+          <Image alt="Pizza Web App" src={pizza} />
           <div className={styles.desc}>
             <h2>Pizza Arc</h2>
             <h4>Pizza Ordering Web App using Node.js</h4>
           </div>
         </div>
         <div className={`${styles.block} ${styles.b3}`}>
-          <Image src={ShoeShop} />
+          <Image alt="Footwear Ecommerce" src={ShoeShop} />
           <div className={styles.desc}>
             <h2>Shoe Shop</h2>
             <h4>A desktop environment UI built using ReactJS</h4>
           </div>
         </div>
         <div className={`${styles.block} ${styles.b4}`}>
-          <Image src={shrewsburry} />
+          <Image alt="Student Attendance System with QR" src={shrewsburry} />
           <div className={styles.desc}>
             <h2>Shrewsbury International School</h2>
             <h4>School Attendance System with QR code using Vue and Node.js</h4>
