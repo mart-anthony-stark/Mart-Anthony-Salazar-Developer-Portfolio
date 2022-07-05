@@ -24,11 +24,11 @@ const Home: NextPage = () => {
         />
         <Typography
           text1="Mart Anthony Salazar"
-          text2="Web Developer"
+          text2="Creating Things For Web"
           delay={3}
           permanent={true}
         />
-        <button className={styles.know}>Know Me More</button>
+        <div className={styles.know}></div>
         <Social />
       </section>
       <About />
