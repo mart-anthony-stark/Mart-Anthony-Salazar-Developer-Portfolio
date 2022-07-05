@@ -25,6 +25,10 @@
 
     span {
       display: block;
+      &.subheading {
+        font-size: 2rem;
+        color: $c-accent;
+      }
     }
   }
 
@@ -46,10 +50,26 @@
     color: $c-accent;
   }
 
-  .know {
+  .know::before {
+    animation: bounce 1s ease infinite;
+    bottom: 2rem;
+    color: #fff;
+    content: "╲╱";
+    font-size: 2rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
     position: absolute;
-    bottom: 5rem;
-    cursor: pointer;
-    padding: 10px 20px;
+    text-align: center;
+    width: 6rem;
+  }
+
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
   }
 }
