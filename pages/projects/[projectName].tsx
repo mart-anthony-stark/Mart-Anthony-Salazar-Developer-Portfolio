@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { server } from "../../config";
 import { Project } from "../../types";
+import projects from "../../public/projects.json";
 
 type Props = {
   project: Project;
@@ -12,7 +13,6 @@ const Project: FC<Props> = (props) => {
 };
 
 export async function getStaticProps(props: any) {
-  const projects = await fetch(`${server}/api/projects`).then((p) => p.json());
   const project = projects.filter(
     (project: Project) => project.title == props.params.projectName
   )[0];
@@ -25,8 +25,6 @@ export async function getStaticProps(props: any) {
 }
 
 export async function getStaticPaths() {
-  console.log(process.env["HOST"]);
-  const projects = await fetch(`${server}/api/projects`).then((p) => p.json());
   return {
     paths: projects.map((project: Project) => {
       return {
