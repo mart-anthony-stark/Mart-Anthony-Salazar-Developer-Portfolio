@@ -45,6 +45,7 @@ const Typography: FC<Props> = ({
           {text1}
         </motion.span>
         <motion.span
+          className={styles.subheading}
           variants={variants}
           initial="hidden"
           animate="visible"
