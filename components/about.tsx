@@ -19,8 +19,8 @@ const About = () => {
           </p>
 
           <a href="https://ko-fi.com/Q5Q7CTA9C">
-            <Image
-              height="36"
+            <img
+              height={36}
               style={{ border: 0, height: 36 }}
               src="https://cdn.ko-fi.com/cdn/kofi4.png?v=3"
               alt="Buy Me a Coffee at ko-fi.com"
