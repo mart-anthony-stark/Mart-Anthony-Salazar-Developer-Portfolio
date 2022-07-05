@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 // import "../styles/slider.scss";
-
+import Script from "next/script";
 import type { AppProps } from "next/app";
 import Layout from "../layouts/Layout";
 import Typography from "../components/Typography";
@@ -57,6 +57,19 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="A Filipino freelance web developer and BSIT student. He has a passion in learning different programming languages, technologies, and skills that can be used for future work and projects. He has an experience in freelancing particularly in web development and data science and still learning things to grow in the tech industry."
         />
         <meta property="og:url" content="https://martsalazar.vercel.app//" />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-W4BSK2TC51"
+        ></Script>
+        <Script>
+          {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-W4BSK2TC51');
+        `}
+        </Script>
       </Head>
       <Layout>
         <div id="cursor"></div>
