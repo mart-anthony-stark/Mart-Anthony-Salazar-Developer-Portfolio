@@ -10,7 +10,7 @@ const About = () => {
       <div className={styles["two-cols"]}>
         <div className={styles["left"]}>
           <p>
-            Hello! I am <strong>Mart Anthony Salazar</strong>. I'm a BSIT
+            Hello! I am <strong>Mart Anthony Salazar</strong>. I&apos;m a BSIT
             student and also a freelance web developer.I am highly passionate
             about learning different programming languages, technologies, and
             skills that I can use for my future work and projects. I have an
@@ -19,7 +19,7 @@ const About = () => {
           </p>
 
           <a href="https://ko-fi.com/Q5Q7CTA9C">
-            <img
+            <Image
               height="36"
               style={{ border: 0, height: 36 }}
               src="https://cdn.ko-fi.com/cdn/kofi4.png?v=3"
@@ -35,7 +35,6 @@ const About = () => {
         />
       </div>
       <Skills />
-      {/* <Slider /> */}
     </section>
   );
 };
