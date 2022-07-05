@@ -17,7 +17,7 @@ const About = () => {
             learning things to grow in the tech industry.
           </p>
 
-          <a href="https://ko-fi.com/Q5Q7CTA9C" target="_blank">
+          <a href="https://ko-fi.com/Q5Q7CTA9C">
             <img
               height="36"
               style={{ border: 0, height: 36 }}
@@ -26,7 +26,7 @@ const About = () => {
             />
           </a>
         </div>
-        <Image src={Chibi} width={500} height={500} />
+        <Image alt="Mart Anthony Salazar Avatar" src={Chibi} width={500} height={500} />
       </div>
       <Skills />
       {/* <Slider /> */}
