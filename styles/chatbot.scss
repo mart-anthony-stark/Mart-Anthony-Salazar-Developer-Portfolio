@@ -35,6 +35,20 @@
   padding: 0.5rem;
 }
 
+.react-chatbot-kit-chat-bot-message {
+  background-color: #2898ec;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: medium;
+  position: relative;
+  max-width: 184.5px;
+  width: fit-content;
+  word-wrap: break-word;
+  text-align: left;
+}
+
 .react-chatbot-kit-chat-input-container {
 }
 
@@ -66,9 +80,6 @@
 }
 
 .react-chatbot-kit-chat-bot-avatar-letter {
-}
-
-.react-chatbot-kit-chat-bot-message {
 }
 
 .react-chatbot-kit-chat-bot-message-arrow {
