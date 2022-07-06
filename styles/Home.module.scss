@@ -85,6 +85,17 @@
     font-size: 2.2rem !important;
   }
 }
+@media (max-width: 570px) {
+  .two-cols {
+    gap: 3rem !important;
+    grid-template-columns: 1fr !important;
+
+    .left {
+      grid-row: 2/3;
+      padding: 1rem;
+    }
+  }
+}
 @media (max-width: 375px) {
   .typography {
     font-size: 1.5rem !important;
