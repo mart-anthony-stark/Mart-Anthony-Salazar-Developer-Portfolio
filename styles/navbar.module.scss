@@ -17,8 +17,6 @@
   z-index: 999;
 
   .left {
-    // @include center();
-    // @include gapped(15px);
     background: $c-pri;
     display: flex;
     padding: 20px;
@@ -95,5 +93,15 @@
         width: 30px !important;
       }
     }
+  }
+}
+
+@media (max-width: 375px) {
+  .logo {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .name {
+    left: 65px !important;
   }
 }
