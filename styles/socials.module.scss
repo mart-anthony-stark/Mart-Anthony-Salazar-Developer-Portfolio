@@ -14,3 +14,16 @@
     background: #9ba0af;
   }
 }
+@media (max-width: 712px) {
+  .socials {
+    top: unset;
+    right: unset;
+    bottom: 20%;
+    flex-direction: row;
+
+    span {
+      width: 1.2rem;
+      height: 2px;
+    }
+  }
+}
