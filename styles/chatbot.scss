@@ -1,8 +1,13 @@
 @import "mixins";
 @import "variables";
 
-.react-chatbot-kit-chat-container ::-webkit-scrollbar {
-  background: #000;
+.react-chatbot-kit-chat-container {
+  ::-webkit-scrollbar {
+    background: rgb(109, 109, 109);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $c-pri;
+  }
 }
 
 .react-chatbot-kit-chat-inner-container {
@@ -35,7 +40,9 @@
   padding: 0.5rem;
 }
 
-.react-chatbot-kit-chat-bot-message {
+.react-chatbot-kit-chat-bot-message,
+.react-chatbot-kit-user-chat-message {
+  position: relative;
   background-color: #2898ec;
   padding: 10px;
   border-radius: 5px;
@@ -47,12 +54,30 @@
   width: fit-content;
   word-wrap: break-word;
   text-align: left;
+  z-index: 1;
 }
 
-.react-chatbot-kit-chat-input-container {
+.react-chatbot-kit-user-chat-message {
+  background-color: $c-accent-dark;
 }
 
-.react-chatbot-kit-chat-input {
+.react-chatbot-kit-chat-bot-message-arrow,
+.react-chatbot-kit-user-chat-message-arrow {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background: #2898ec;
+  left: -5px;
+  bottom: 8px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.react-chatbot-kit-user-chat-message-arrow {
+  left: unset;
+  right: -5px;
+  background: $c-accent-dark;
+}
+.react-chatbot-kit-user-chat-message-arrow .react-chatbot-kit-chat-input {
   padding: 0.5rem;
   border: none;
 
@@ -67,12 +92,6 @@
 .react-chatbot-kit-chat-input::placeholder {
 }
 
-.react-chatbot-kit-chat-btn-send {
-}
-
-.react-chatbot-kit-chat-btn-send-icon {
-}
-
 .react-chatbot-kit-chat-bot-avatar-container {
 }
 
@@ -80,9 +99,6 @@
 }
 
 .react-chatbot-kit-chat-bot-avatar-letter {
-}
-
-.react-chatbot-kit-chat-bot-message-arrow {
 }
 
 .react-chatbot-kit-chat-bot-loading-icon-container {
@@ -120,12 +136,6 @@
   color: white;
 }
 
-.bot-avatar {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: rgb(212, 212, 212);
-}
 .react-chatbot-kit-chat-container {
   position: relative;
   width: 275px;
@@ -198,4 +208,11 @@
 .react-chatbot-kit-user-avatar-container {
   height: 30px;
   width: 30px;
+}
+
+.bot-avatar {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  background: rgb(212, 212, 212) !important;
 }
