@@ -76,3 +76,24 @@
     }
   }
 }
+@media (max-width: 712px) {
+  .typography {
+    font-size: 2rem !important;
+  }
+  .permanent {
+    transform: translateX(0px) !important;
+    font-size: 2.2rem !important;
+  }
+}
+@media (max-width: 375px) {
+  .typography {
+    font-size: 1.5rem !important;
+  }
+  .permanent {
+    font-size: 1.7rem !important;
+
+    .subheading {
+      font-size: 1.5rem !important;
+    }
+  }
+}
