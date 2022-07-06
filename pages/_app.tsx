@@ -1,5 +1,5 @@
 import "../styles/globals.scss";
-// import "../styles/slider.scss";
+import Chatbot from "react-chatbot-kit";
 import Script from "next/script";
 import type { AppProps } from "next/app";
 import Layout from "../layouts/Layout";
@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import AppContext from "../context/AppContext";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { ActionProvider, MessageParser } from "../config/chatbot";
+import { config } from "../config/chatbot-config";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -72,6 +74,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <Layout>
+        <Chatbot
+          config={config}
+          actionProvider={ActionProvider}
+          messageParser={MessageParser}
+        />
         <div id="cursor"></div>
         <Component {...pageProps} />
       </Layout>
