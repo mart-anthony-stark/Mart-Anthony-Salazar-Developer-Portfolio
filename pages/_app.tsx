@@ -10,6 +10,8 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { ActionProvider, MessageParser } from "../config/chatbot";
 import { config } from "../config/chatbot-config";
+import messageIcon from "../public/svg/message.svg";
+import Image from "next/image";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -86,7 +88,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           className="app-chatbot-button"
           onClick={() => setBotVisible(!showBot)}
         >
-          Chats
+          <Image src={messageIcon} />
         </button>
         <div id="cursor"></div>
         <Component {...pageProps} />
