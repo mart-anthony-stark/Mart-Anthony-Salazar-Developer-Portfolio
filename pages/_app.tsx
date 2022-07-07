@@ -14,6 +14,7 @@ import { config } from "../config/chatbot-config";
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   const [activeRoute, setActiveRoute] = useState("");
+  const [showBot, setBotVisible] = useState(false);
 
   useEffect(() => {
     setActiveRoute(router.asPath);
@@ -74,11 +75,19 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <Layout>
+        {/* {showBot && ( */}
         <Chatbot
           config={config}
           actionProvider={ActionProvider}
           messageParser={MessageParser}
         />
+        {/* )} */}
+        <button
+          className="app-chatbot-button"
+          onClick={() => setBotVisible(!showBot)}
+        >
+          Chats
+        </button>
         <div id="cursor"></div>
         <Component {...pageProps} />
       </Layout>
