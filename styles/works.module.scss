@@ -2,11 +2,15 @@
 @import "variables";
 
 .works {
-  height: 100vh;
+  min-height: 100vh;
   background: $c-pri;
+  margin: 2rem 0;
 
   .headerGrid {
+    // padding: 2rem;
+    margin: auto;
     margin-top: 50px;
+    max-width: 1200px;
     width: 100%;
     min-height: 100vh;
     display: -ms-grid;
@@ -20,12 +24,17 @@
 
   .block {
     position: relative;
+    min-height: 300px;
     height: 100%;
     width: 100%;
     border: 1px solid white;
     background: black;
     // opacity: 0.6;
     // transition: opacity 0.2s ease-out;
+    img {
+      position: absolute;
+      inset: 0;
+    }
 
     .desc {
       position: absolute;
@@ -69,11 +78,31 @@
     grid-area: big-middle;
   }
 
+  .b5 {
+    grid-column: 1/4;
+  }
+  .b6 {
+    grid-column: 4/6;
+  }
+
   .bottom-block {
     grid-area: big-bottom;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 375px) {
+  .works {
+    padding: 0 !important;
+  }
+  .headerGrid {
+    padding: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+  .block {
+    // height: 150px;
   }
 }
