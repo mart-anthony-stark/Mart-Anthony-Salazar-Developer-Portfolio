@@ -22,10 +22,6 @@ const callback = (entries: any) => {
 const Navbar: FC<Props> = (props) => {
   const { activeRoute } = props;
 
-  // const observer = new IntersectionObserver(callback, {
-  //   threshold: 0.5,
-  // });
-
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
