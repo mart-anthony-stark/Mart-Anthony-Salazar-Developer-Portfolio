@@ -230,3 +230,14 @@
   border-radius: 50% !important;
   background: rgb(212, 212, 212) !important;
 }
+
+@media (max-width: 375px) {
+  .app-chatbot-button {
+    bottom: 50px;
+  }
+  .react-chatbot-kit-chat-inner-container {
+    bottom: 110px;
+    right: 15px;
+    max-width: 300px;
+  }
+}
