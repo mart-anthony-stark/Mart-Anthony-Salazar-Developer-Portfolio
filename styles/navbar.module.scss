@@ -83,9 +83,10 @@
     }
 
     .links {
+      margin-left: -20px;
       flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
+      justify-content: space-around;
+      width: calc(100% - 75px);
       padding: 1rem;
       img {
         padding: 2px !important;
