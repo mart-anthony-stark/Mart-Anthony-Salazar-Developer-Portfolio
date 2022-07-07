@@ -1,3 +1,75 @@
+
 [
-  { "id": 1, "title": "iaugsasdasdasdasdad" }
+  { 
+    "title": "Reactive OS",
+    "subheading": "A desktop environment UI built using ReactJS",
+    "link": "",
+    "sourcecode":"",
+    "images": [
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/reactos/react-os.webp",
+        "alt":""
+      }
+    ]
+  },
+  { 
+    "title": "Pizza Web App",
+    "subheading": "Pizza Ordering Web App using Node.js",
+    "link": "",
+    "sourcecode":"",
+    "images": [
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/pizza/Pizza.webp",
+        "alt":""
+      }
+    ]
+  },
+  { 
+    "title": "Reactive OS",
+    "subheading": "A desktop environment UI built using ReactJS",
+    "link": "",
+    "sourcecode":"",
+    "images": [
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/reactos/react-os.webp",
+        "alt":""
+      }
+    ]
+  },
+  { 
+    "title": "Shrewsbury International School",
+    "subheading": "School Attendance System with QR code using Vue and Node.js",
+    "link": "",
+    "sourcecode":"",
+    "images": [
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/shrewsbury/shrewsburry.webp",
+        "alt":""
+      }
+    ]
+  },
+  { 
+    "title": "Shrewsbury International School",
+    "subheading": "School Attendance System with QR code using Vue and Node.js",
+    "link": "",
+    "sourcecode":"",
+    "images": [
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/shrewsbury/shrewsburry.webp",
+        "alt":""
+      }
+    ]
+  },
+  { 
+    "title": "Shrewsbury International School",
+    "subheading": "School Attendance System with QR code using Vue and Node.js",
+    "link": "",
+    "sourcecode":"",
+    "images": [
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/shrewsbury/shrewsburry.webp",
+        "alt":""
+      }
+    ]
+  }
 ]
