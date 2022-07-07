@@ -75,13 +75,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <Layout>
-        {/* {showBot && ( */}
-        <Chatbot
-          config={config}
-          actionProvider={ActionProvider}
-          messageParser={MessageParser}
-        />
-        {/* )} */}
+        {showBot && (
+          <Chatbot
+            config={config}
+            actionProvider={ActionProvider}
+            messageParser={MessageParser}
+          />
+        )}
         <button
           className="app-chatbot-button"
           onClick={() => setBotVisible(!showBot)}
