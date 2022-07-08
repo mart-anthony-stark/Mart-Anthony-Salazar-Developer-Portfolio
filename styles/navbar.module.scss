@@ -98,11 +98,18 @@
 }
 
 @media (max-width: 375px) {
+  .left {
+    padding: 0 15px !important;
+    height: 55px !important;
+  }
   .logo {
     height: 40px !important;
     width: 40px !important;
   }
   .name {
     left: 65px !important;
+    font-size: 0.8rem !important;
+    height: 55px !important;
+    width: 100% !important;
   }
 }
