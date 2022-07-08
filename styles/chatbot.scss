@@ -143,6 +143,7 @@
 }
 .react-chatbot-kit-chat-message-container {
   background: #c7d3d4ff;
+  height: 335px !important;
 }
 
 .react-chatbot-kit-chat-input-form {
@@ -155,12 +156,12 @@
   width: 275px;
 }
 
-.react-chatbot-kit-chat-inner-container {
-  height: 500px;
-  background-color: #fff;
-  border-radius: 3px;
-  border-radius: 5px;
-}
+// .react-chatbot-kit-chat-inner-container {
+//   height: 500px;
+//   background-color: #fff;
+//   border-radius: 3px;
+//   border-radius: 5px;
+// }
 
 .react-chatbot-kit-chat-header {
   border-top-right-radius: 5px;
@@ -233,11 +234,13 @@
 
 @media (max-width: 375px) {
   .app-chatbot-button {
-    bottom: 50px;
+    bottom: 35px;
   }
   .react-chatbot-kit-chat-inner-container {
-    bottom: 110px;
-    right: 15px;
+    bottom: 90px;
+    // right: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 300px;
   }
 }
