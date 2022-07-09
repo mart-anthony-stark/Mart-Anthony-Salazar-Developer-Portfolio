@@ -87,12 +87,17 @@
 }
 @media (max-width: 570px) {
   .two-cols {
-    gap: 3rem !important;
+    gap: 1rem !important;
     grid-template-columns: 1fr !important;
 
     .left {
       grid-row: 2/3;
       padding: 1rem;
+    }
+    .avatar {
+      position: relative;
+      height: 250px !important;
+      width: 150px !important;
     }
   }
 }
