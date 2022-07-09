@@ -27,12 +27,14 @@ const About = () => {
             />
           </a>
         </div>
-        <Image
-          alt="Mart Anthony Salazar Avatar"
-          src={Chibi}
-          width={300}
-          height={450}
-        />
+        <div className={styles.avatar}>
+          <Image
+            alt="Mart Anthony Salazar Avatar"
+            src={Chibi}
+            width={300}
+            height={450}
+          />
+        </div>
       </div>
       <Skills />
     </section>
