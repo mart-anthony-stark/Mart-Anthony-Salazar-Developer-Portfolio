@@ -1,12 +1,11 @@
 import styles from "../../styles/navbar.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Home from "../../svg/home.svg";
 import About from "../../svg/about.svg";
 import Work from "../../svg/works.svg";
 import Contact from "../../svg/contact.svg";
 import Image from "next/image";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 
 type Props = {
   activeRoute: string;
