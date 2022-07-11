@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Chibi from "../images/chibi.png";
 import Skills from "./Skills";
-import Slider from "./Slider";
 
 const About = () => {
   return (
