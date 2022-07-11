@@ -1,6 +1,6 @@
 import Image from "next/image";
 import avatar from "../../public/avatar.webp";
-export default function MyAvatar(props: any) {
+export default function MyAvatar() {
   return (
     <Image
       src={avatar}
