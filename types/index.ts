@@ -1,4 +1,7 @@
 export type Project = {
-  id: number;
   title: string;
+  subheading: string;
+  link: string;
+  sourcecode: string;
+  images: Object[]
 };
