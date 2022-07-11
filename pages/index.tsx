@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           text1="Mart Anthony Salazar"
           text2="Creating Things For Web"
           delay={3}
-          permanent={true}
+          permanent
         />
         <div className={styles.know}></div>
         <Social />
