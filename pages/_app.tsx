@@ -3,7 +3,6 @@ import Chatbot from "react-chatbot-kit";
 import Script from "next/script";
 import type { AppProps } from "next/app";
 import Layout from "../layouts/Layout";
-import Typography from "../components/Typography";
 import { useEffect, useState } from "react";
 import AppContext from "../context/AppContext";
 import { useRouter } from "next/router";
