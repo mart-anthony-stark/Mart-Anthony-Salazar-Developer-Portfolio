@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { FC, useContext } from "react";
 import Navbar from "../components/navbar/Navbar";
 import AppContext from "../context/AppContext";
