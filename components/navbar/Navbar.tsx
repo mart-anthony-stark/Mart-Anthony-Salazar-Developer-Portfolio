@@ -12,12 +12,6 @@ type Props = {
   setActiveRoute?: (path: string) => void;
 };
 
-const callback = (entries: any) => {
-  entries.forEach((entry: any) => {
-    console.log(entry);
-  });
-};
-
 const Navbar: FC<Props> = (props) => {
   const { activeRoute } = props;
 
