@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import { motion } from "framer-motion";
 import styles from "../styles/Home.module.scss";
 
