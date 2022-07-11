@@ -25,13 +25,13 @@
     ]
   },
   { 
-    "title": "Reactive OS",
-    "subheading": "A desktop environment UI built using ReactJS",
-    "link": "",
+    "title": "Expice",
+    "subheading": "Food and Resto Landing Page using Vue.js",
+    "link": "https://expice-resto.netlify.app",
     "sourcecode":"",
     "images": [
       {
-        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/reactos/react-os.webp",
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/expice/cover.webp",
         "alt":""
       }
     ]
