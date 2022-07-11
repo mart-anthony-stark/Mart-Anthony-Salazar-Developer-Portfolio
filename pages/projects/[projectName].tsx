@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { server } from "../../config";
 import { Project } from "../../types";
 import projects from "../../public/projects.json";
 
