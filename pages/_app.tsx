@@ -17,6 +17,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [activeRoute, setActiveRoute] = useState("");
   const [showBot, setBotVisible] = useState(false);
 
+  const handleChatButton = () => {
+    setBotVisible(!showBot);
+  };
+
   useEffect(() => {
     setActiveRoute(router.asPath);
   }, [router.asPath]);
@@ -83,10 +87,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             messageParser={MessageParser}
           />
         )}
-        <button
-          className="app-chatbot-button"
-          onClick={() => setBotVisible(!showBot)}
-        >
+        <button className="app-chatbot-button" onClick={handleChatButton}>
           <Image src={messageIcon} />
         </button>
         <div id="cursor"></div>
