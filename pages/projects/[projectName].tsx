@@ -18,7 +18,7 @@ const Project: FC<Props> = (props) => {
 
 export async function getStaticProps(props: any) {
   const project = projects.filter(
-    (project: Project) => project.title == props.params.projectName
+    (project: Project) => project.slug == props.params.projectName
   )[0];
 
   return {
@@ -33,7 +33,7 @@ export async function getStaticPaths() {
     paths: projects.map((project: Project) => {
       return {
         params: {
-          projectName: project.title,
+          projectName: project.slug,
         },
       };
     }),
