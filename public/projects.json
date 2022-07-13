@@ -2,6 +2,7 @@
 [
   { 
     "title": "Reactive OS",
+    "slug":"reactive-os",
     "subheading": "A desktop environment UI built using ReactJS",
     "link": "",
     "sourcecode":"",
@@ -14,6 +15,7 @@
   },
   { 
     "title": "Pizza Web App",
+    "slug":"pizza-web",
     "subheading": "Pizza Ordering Web App using Node.js",
     "link": "",
     "sourcecode":"",
@@ -26,6 +28,7 @@
   },
   { 
     "title": "Expice",
+    "slug":"expice",
     "subheading": "Food and Resto Landing Page using Vue.js",
     "link": "https://expice-resto.netlify.app",
     "sourcecode":"",
@@ -38,6 +41,7 @@
   },
   { 
     "title": "Shrewsbury International School",
+    "slug":"shrewsbury-sas",
     "subheading": "School Attendance System with QR code using Vue and Node.js",
     "link": "",
     "sourcecode":"",
@@ -50,6 +54,7 @@
   },
   { 
     "title": "Shrewsbury International School",
+    "slug":"shrewsbury",
     "subheading": "School Attendance System with QR code using Vue and Node.js",
     "link": "",
     "sourcecode":"",
@@ -62,6 +67,7 @@
   },
   { 
     "title": "Shrewsbury International School",
+    "slug":"a",
     "subheading": "School Attendance System with QR code using Vue and Node.js",
     "link": "",
     "sourcecode":"",
