@@ -18,24 +18,40 @@
     h2 {
       align-self: flex-start;
     }
+    .two-cols {
+      max-width: 800px;
+      display: grid;
+      grid-template-columns: 1fr 210px;
+      gap: 10px;
 
-    .main {
-      position: relative;
-      max-width: 500px;
-      width: 100%;
-      height: 400px;
+      .main {
+        position: relative;
+        width: 100%;
+        height: 400px;
 
-      img {
-        height: 400px !important;
-        width: 100% !important;
+        img {
+          height: 400px !important;
+          width: 100% !important;
+        }
       }
-    }
 
-    .menu {
+      .menu {
+        .button {
+          width: 200px;
+          &.active {
+            border: 3px solid $c-accent-dark;
+          }
+        }
+      }
     }
   }
 }
 
+@media (max-width: 730px) {
+  .two-cols {
+    grid-template-columns: 1fr !important;
+  }
+}
 @media (max-width: 712px) {
   .project {
     padding-left: 1rem;
