@@ -25,7 +25,10 @@ const Project: FC<Props> = (props) => {
           </div>
           <div className={styles["menu"]}>
             {project.images.map((image) => (
-              <div className={`${styles["button"]} ${styles["active"]}`}>
+              <div
+                key={image.src}
+                className={`${styles["button"]} ${styles["active"]}`}
+              >
                 <Image
                   src={image.src}
                   alt={image.alt}
