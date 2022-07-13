@@ -7,7 +7,6 @@
   margin: 2rem 0;
 
   .headerGrid {
-    // padding: 2rem;
     margin: auto;
     margin-top: 50px;
     max-width: 1200px;
@@ -17,7 +16,6 @@
     display: grid;
     -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    // -ms-grid-columns: repeat(1fr) [5];
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle" "big-bottom big-bottom big-bottom big-bottom big-bottom";
   }
@@ -101,8 +99,5 @@
     padding: 0 !important;
     display: flex !important;
     flex-wrap: wrap;
-  }
-  .block {
-    // height: 150px;
   }
 }
