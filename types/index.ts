@@ -5,6 +5,7 @@ export type ImageObj = {
 
 export type Project = {
   title: string;
+  slug: string;
   subheading: string;
   link: string;
   sourcecode: string;
