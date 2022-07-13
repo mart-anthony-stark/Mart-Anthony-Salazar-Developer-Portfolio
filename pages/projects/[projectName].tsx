@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { Project } from "../../types";
 import projects from "../../public/projects.json";
+import styles from "../../styles/Project.module.scss";
+import Image from "next/image";
 
 type Props = {
   project: Project;
@@ -9,9 +11,14 @@ type Props = {
 const Project: FC<Props> = (props) => {
   const { project } = props;
   return (
-    <div>
-      <h1>{project.title}</h1>
-      <h2>{project.images[0]["src"]}</h2>
+    <div className={styles.project}>
+      <div className={styles["image-container"]}>
+        <h2>{project.title}</h2>
+        <div className={styles["main"]}>
+          <img src={project.images[0]["src"]} alt={project.images[0]["alt"]} />
+        </div>
+        <div className={styles["menu"]}></div>
+      </div>
     </div>
   );
 };
