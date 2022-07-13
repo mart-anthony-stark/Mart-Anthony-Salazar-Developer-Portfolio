@@ -8,7 +8,12 @@ type Props = {
 
 const Project: FC<Props> = (props) => {
   const { project } = props;
-  return <h1>{project.title}</h1>;
+  return (
+    <div>
+      <h1>{project.title}</h1>
+      <h2>{project.images[0]["src"]}</h2>
+    </div>
+  );
 };
 
 export async function getStaticProps(props: any) {
