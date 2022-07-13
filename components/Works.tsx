@@ -19,7 +19,7 @@ const Works = () => {
       <h1 className="heading">Works</h1>
       <div className={styles.headerGrid}>
         {projects.map((project, index) => (
-          <Link href="/" passHref key={project.title}>
+          <Link href={`/projects/${project.slug}`} passHref key={project.title}>
             <div className={`${styles.block} ${blockClassNames[index]}`}>
               <Image
                 alt={project["images"][0]["alt"]}
