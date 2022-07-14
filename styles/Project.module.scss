@@ -54,7 +54,11 @@
 }
 @media (max-width: 712px) {
   .project {
-    padding-left: 1rem;
+    padding-left: 1rem !important;
+  }
+}
+@media (max-width: 375px) {
+  .project {
     padding-top: 60px;
   }
 }
