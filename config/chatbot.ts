@@ -1,4 +1,3 @@
-
 // MessageParser starter code
 export class MessageParser {
   actionProvider: any;
@@ -9,7 +8,16 @@ export class MessageParser {
   }
 
   parse(message: any) {
-    console.log(message);
+    const lowerCaseMessage = message.toLowerCase();
+    const greetings = ["hello", "hi", "annyeong"];
+
+    if (
+      lowerCaseMessage
+        .split(" ")
+        .some((word: string) => greetings.includes(word))
+    ) {
+      this.actionProvider.greet();
+    }
   }
 }
 
@@ -34,5 +42,15 @@ export class ActionProvider {
     this.stateRef = stateRef;
     this.createCustomMessage = createCustomMessage;
   }
+  greet() {
+    const greetingMessage = this.createChatBotMessage("Hi, friend.");
+    this.updateChatbotState(greetingMessage);
+  }
+  updateChatbotState(message: string) {
+    // NOTE: This function is set in the constructor, and is passed in      // from the top level Chatbot component. The setState function here     // actually manipulates the top level state of the Chatbot, so it's     // important that we make sure that we preserve the previous state.
+    this.setState((prevState: any) => ({
+      ...prevState,
+      messages: [...prevState.messages, message],
+    }));
+  }
 }
-
