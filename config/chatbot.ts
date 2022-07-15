@@ -42,18 +42,26 @@ export class ActionProvider {
     this.stateRef = stateRef;
     this.createCustomMessage = createCustomMessage;
   }
-  greet() {
+  greet = () => {
     const replies = ["Hi, friend", "Hello!"];
     const greetingMessage = this.createChatBotMessage(
       replies[Math.floor(Math.random() * replies.length)]
     );
     this.updateChatbotState(greetingMessage);
-  }
-  updateChatbotState(message: string) {
+  };
+
+  introduce = () => {
+    const greetingMessage = this.createChatBotMessage(
+      "Mart Anthony Salazar is a BSIT student and also a freelance web developer in the Philippines."
+    );
+    this.updateChatbotState(greetingMessage);
+  };
+
+  updateChatbotState = (message: string) => {
     // NOTE: This function is set in the constructor, and is passed in      // from the top level Chatbot component. The setState function here     // actually manipulates the top level state of the Chatbot, so it's     // important that we make sure that we preserve the previous state.
     this.setState((prevState: any) => ({
       ...prevState,
       messages: [...prevState.messages, message],
     }));
-  }
+  };
 }
