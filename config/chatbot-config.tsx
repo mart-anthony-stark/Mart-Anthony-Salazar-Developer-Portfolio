@@ -1,7 +1,7 @@
 const BOTNAME = `Marvis`;
 import MyAvatar from "./bot_components/MyAvatar";
 // Config starter code
-
+import IWidget from "react-chatbot-kit/build/src/interfaces/IWidget";
 import { createChatBotMessage } from "react-chatbot-kit";
 import LearningOptions from "./bot_components/Options";
 
@@ -18,6 +18,8 @@ export const config = {
     {
       widgetName: "learningOptions",
       widgetFunc: (props: any) => <LearningOptions {...props} />,
+      props: [],
+      mapStateToProps: [],
     },
   ],
   customComponents: {
