@@ -80,13 +80,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <Layout>
-        {showBot && (
+        <div className={`chatbot-cont ${showBot ? "open" : ""}`}>
           <Chatbot
             config={config}
             actionProvider={ActionProvider}
             messageParser={MessageParser}
           />
-        )}
+        </div>
         <button className="app-chatbot-button" onClick={handleChatButton}>
           <Image src={messageIcon} />
         </button>
