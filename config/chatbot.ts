@@ -43,7 +43,10 @@ export class ActionProvider {
     this.createCustomMessage = createCustomMessage;
   }
   greet() {
-    const greetingMessage = this.createChatBotMessage("Hi, friend.");
+    const replies = ["Hi, friend", "Hello!"];
+    const greetingMessage = this.createChatBotMessage(
+      replies[Math.floor(Math.random() * replies.length)]
+    );
     this.updateChatbotState(greetingMessage);
   }
   updateChatbotState(message: string) {
