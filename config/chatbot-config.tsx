@@ -3,9 +3,23 @@ import MyAvatar from "./bot_components/MyAvatar";
 // Config starter code
 
 import { createChatBotMessage } from "react-chatbot-kit";
+import LearningOptions from "./bot_components/Options";
 
 export const config = {
-  initialMessages: [createChatBotMessage(`Hello world! I'm ${BOTNAME}`, {})],
+  initialMessages: [
+    createChatBotMessage(
+      `Hello world! I'm ${BOTNAME}, an AI companion of Mart. What do you want to know about my master?`,
+      {
+        widget: "learningOptions",
+      }
+    ),
+  ],
+  widgets: [
+    {
+      widgetName: "learningOptions",
+      widgetFunc: (props: any) => <LearningOptions {...props} />,
+    },
+  ],
   customComponents: {
     // Replaces the default header
     header: () => (
