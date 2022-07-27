@@ -39,6 +39,8 @@ const Project: FC<Props> = (props) => {
             ))}
           </div>
         </div>
+        <h3>{project.subheading}</h3>
+        <p className={styles.description}>{project.description}</p>
       </div>
     </div>
   );
