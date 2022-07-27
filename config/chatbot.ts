@@ -10,13 +10,15 @@ export class MessageParser {
   parse(message: any) {
     const lowerCaseMessage = message.toLowerCase();
     const greetings = ["hello", "hi", "annyeong"];
+    const ages = ["how old"];
 
-    if (
-      lowerCaseMessage
-        .split(" ")
-        .some((word: string) => greetings.includes(word))
-    ) {
+    // Greetings
+    if (greetings.some((word: string) => lowerCaseMessage.includes(word))) {
       this.actionProvider.greet();
+    }
+
+    // Asks how old
+    if (ages.some((word: string) => lowerCaseMessage.includes(word))) {
     }
   }
 }
