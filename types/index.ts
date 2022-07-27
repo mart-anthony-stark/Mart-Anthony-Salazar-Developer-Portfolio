@@ -10,4 +10,5 @@ export type Project = {
   link: string;
   sourcecode: string;
   images: ImageObj[];
+  description: string;
 };
