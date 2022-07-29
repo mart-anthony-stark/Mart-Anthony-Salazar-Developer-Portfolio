@@ -3,6 +3,7 @@ import { Project } from "../../types";
 import projects from "../../public/projects.json";
 import styles from "../../styles/Project.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   project: Project;
@@ -40,6 +41,7 @@ const Project: FC<Props> = (props) => {
           </div>
         </div>
         <h3>{project.subheading}</h3>
+        <Link href={project.link} />
         <p className={styles.description}>{project.description}</p>
       </div>
     </div>
