@@ -41,7 +41,7 @@ const Project: FC<Props> = (props) => {
           </div>
         </div>
         <h3>{project.subheading}</h3>
-        <Link href={project.link} />
+        {project.link && <Link href={project.link}>Visit Site</Link>}
         <p className={styles.description}>{project.description}</p>
       </div>
     </div>
