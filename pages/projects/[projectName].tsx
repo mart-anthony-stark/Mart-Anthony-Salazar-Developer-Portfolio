@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Project } from "../../types";
 import projects from "../../public/projects.json";
 import styles from "../../styles/Project.module.scss";
@@ -10,6 +10,7 @@ type Props = {
 };
 
 const Project: FC<Props> = (props) => {
+  const [activeImage, setActiveImage] = useState(0);
   const { project } = props;
   return (
     <div className={styles.project}>
@@ -18,17 +19,19 @@ const Project: FC<Props> = (props) => {
         <div className={styles["two-cols"]}>
           <div className={styles["main"]}>
             <Image
-              src={project.images[0]["src"]}
-              alt={project.images[0]["alt"]}
+              src={project.images[activeImage]["src"]}
+              alt={project.images[activeImage]["alt"]}
               height={300}
               width={600}
             />
           </div>
           <div className={styles["menu"]}>
-            {project.images.map((image) => (
+            {project.images.map((image, i) => (
               <div
                 key={image.src}
-                className={`${styles["button"]} ${styles["active"]}`}
+                className={`${styles["button"]} ${
+                  activeImage == i && styles["active"]
+                }`}
               >
                 <Image
                   src={image.src}
@@ -42,10 +45,22 @@ const Project: FC<Props> = (props) => {
         </div>
         <h3>{project.subheading}</h3>
 
-        <div className="links">
-          {project.link && <Link href={project.link}>Visit Site</Link>}
+        <div className={styles.links}>
+          {project.link && (
+            <Link href={project.link}>
+              <span className={styles.site}>
+                Visit Site
+                <i className="fa fa-external-link" aria-hidden="true"></i>
+              </span>
+            </Link>
+          )}
           {project.sourcecode && (
-            <Link href={project.sourcecode}>View Source Code</Link>
+            <Link href={project.sourcecode}>
+              <span className={styles.code}>
+                View Source Code
+                <i className="fa fa-github" aria-hidden="true"></i>
+              </span>
+            </Link>
           )}
         </div>
         <p className={styles.description}>{project.description}</p>
