@@ -29,21 +29,25 @@ const Navbar: FC<Props> = (props) => {
           <Link passHref href="/">
             <Image src={Home} height={40} width={40} alt="" />
           </Link>
+          <span className={styles.menutxt}>Home</span>
         </li>
         <li className={activeRoute == "/#about" ? "active" : ""}>
           <Link passHref href="/#about">
             <Image src={About} height={40} width={40} alt="" />
           </Link>
+          <span className={styles.menutxt}>About</span>
         </li>
         <li className={activeRoute == "/#works" ? "active" : ""}>
           <Link passHref href="/#works">
             <Image src={Work} height={40} width={40} alt="" />
           </Link>
+          <span className={styles.menutxt}>Works</span>
         </li>
         <li className={activeRoute == "/#contact" ? "active" : ""}>
           <Link passHref href="/#contact">
             <Image src={Contact} height={40} width={40} alt="" />
           </Link>
+          <span className={styles.menutxt}>Contact</span>
         </li>
       </div>
     </nav>
