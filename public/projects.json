@@ -43,15 +43,19 @@
     ]
   },
   { 
-    "title": "Shrewsbury International School",
-    "slug":"shrewsbury-sas",
-    "subheading": "School Attendance System with QR code using Vue and Node.js",
+    "title": "FFND - Chrome Extension",
+    "slug":"ffnd",
+    "subheading": "Filipino Fake News Detector Machine Learning",
     "link": "",
     "sourcecode":"https://github.com/mart-anthony-stark/Shrewsbury-International-School-SAS",
     "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minus, reiciendis odio debitis, laborum illo dicta nostrum possimus neque facere consectetur recusandae excepturi minima nisi.",
     "images": [
       {
-        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/shrewsbury/shrewsburry.webp",
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/fake-news/2.webp",
+        "alt":""
+      },
+      {
+        "src":"https://raw.githubusercontent.com/mart-anthony-stark/Mart-Anthony-Salazar-Developer-Portfolio/main/public/projects/fake-news/1.webp",
         "alt":""
       }
     ]
