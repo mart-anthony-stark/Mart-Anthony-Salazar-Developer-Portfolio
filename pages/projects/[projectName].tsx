@@ -32,6 +32,9 @@ const Project: FC<Props> = (props) => {
                 className={`${styles["button"]} ${
                   activeImage == i && styles["active"]
                 }`}
+                onClick={() => {
+                  setActiveImage(i);
+                }}
               >
                 <Image
                   src={image.src}
