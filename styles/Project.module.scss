@@ -3,7 +3,7 @@
 
 .project {
   min-height: 100vh;
-  background: #eeeeee;
+  background: #ebebeb;
   @include center();
   padding: 1rem;
   padding-left: 110px;
@@ -23,6 +23,10 @@
       display: grid;
       grid-template-columns: 1fr 210px;
       gap: 10px;
+      background: rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+      box-shadow: 0 0 15px rgba($color: rgb(0, 0, 0), $alpha: 0.3);
+      border-radius: 5px;
+      padding: 1rem;
 
       .main {
         position: relative;
@@ -38,10 +42,36 @@
       .menu {
         .button {
           width: 200px;
+          cursor: pointer;
           &.active {
             border: 3px solid $c-accent-dark;
+            cursor: auto;
           }
         }
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .site,
+      .code {
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      .code {
+        background: rgb(44, 44, 44);
+        color: #ebebeb;
+        border-radius: 1px;
+        padding: 10px;
+        border-radius: 5px;
       }
     }
 
