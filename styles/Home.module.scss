@@ -3,7 +3,12 @@
 
 .hero {
   position: relative;
-  background: $c-pri;
+  background: rgb(22, 53, 99);
+  background: linear-gradient(
+    0deg,
+    rgba(22, 53, 99, 1) 0%,
+    rgba(10, 25, 47, 1) 71%
+  );
   min-height: calc(100vh);
   color: $c-white;
   flex-direction: column;
@@ -75,6 +80,14 @@
       transform: translateY(-50%);
     }
   }
+}
+.about {
+  background: rgb(22, 53, 99);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 53, 99, 1) 0%,
+    rgba(10, 25, 47, 1) 100%
+  );
 }
 @media (max-width: 712px) {
   .typography {
