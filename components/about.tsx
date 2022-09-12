@@ -5,7 +5,7 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <section id="about" className={styles.hero}>
+    <section id="about" className={`${styles.hero} ${styles.about}`}>
       <div className={styles["two-cols"]}>
         <div className={styles["left"]}>
           <p>
